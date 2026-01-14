@@ -31,3 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Environment variables / secrets
+.env
+src/main/resources/application-prod.yml
