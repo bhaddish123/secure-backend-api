@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: jdbc:postgresql://secure-api-db.cbg4ma8ggmkj.us-east-2.rds.amazonaws.com:5432/secureapi?sslmode=require
-    username: postgres
-    password: "123One23$"
+    username: username
+    password: password
 
   jpa:
     properties:
