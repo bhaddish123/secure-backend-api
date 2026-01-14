@@ -14,6 +14,25 @@ A secure backend API built with Spring Boot that demonstrates:
 - PostgreSQL (AWS RDS)
 - Maven
 
+## Running Locally
+
+This project uses environment-based configuration.  
+Sensitive values (database credentials, JWT secret) are **not committed**.
+
+### Prerequisites
+- Java 17+
+- Maven
+- PostgreSQL (local or cloud)
+
+### Steps
+1. Create `application-prod.yml` based on `application-prod.example.yml`
+2. Fill in your own database credentials and JWT secret
+3. Run the application:
+
+```bash
+SPRING_PROFILES_ACTIVE=prod ./mvnw spring-boot:run
+```
+
 ## Endpoints
 - POST /register — create a new user
 - POST /login — authenticate and receive a JWT
