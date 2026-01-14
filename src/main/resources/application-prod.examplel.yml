@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://<RDS_ENDPOINT>:5432/<DB_NAME>?sslmode=require
+    username: <DB_USERNAME>
+    password: <DB_PASSWORD>
+
+jwt:
+  secret: <JWT_SECRET>
+
+server:
+  port: 8080
